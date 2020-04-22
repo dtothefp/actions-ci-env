@@ -16,7 +16,7 @@ async function run() {
   };
 
   try {
-    Object.keys.envKeys.forEach((key) => {
+    Object.keys(envKeys).forEach((key) => {
       const envKey = envKeys[key];
       const value = ciEnv[key];
 
