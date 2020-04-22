@@ -72,7 +72,11 @@ async function run() {
 
   try {
     Object.keys.envKeys.forEach((key) => {
-      core.exportVariable(envKeys[key], ciEnv[key]);
+      const envKey = envKeys[key];
+      const value = ciEnv[key];
+
+      core.debug(`${envKey} = '${value}'`)
+      core.exportVariable(envKey, value);
     });
   }
   catch (error) {
@@ -80,7 +84,7 @@ async function run() {
   }
 }
 
-run()
+run();
 
 
 /***/ }),
