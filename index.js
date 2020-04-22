@@ -20,7 +20,7 @@ async function run() {
       const envKey = envKeys[key];
       const value = ciEnv[key];
 
-      core.debug(`${envKey} = '${value}'`)
+      core.debug(`${envKey} = '${value}'`);
       core.exportVariable(envKey, value);
     });
   }
