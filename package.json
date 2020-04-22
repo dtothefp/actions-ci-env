@@ -1,0 +1,20 @@
+{
+  "name": "actions-ci-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist",
+    "lint": "eslint index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "ci-env": "^1.12.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0"
+  }
+}

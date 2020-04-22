@@ -1,0 +1,8 @@
+name: 'Get CI Env'
+description: 'Export branch name as environment variable'
+branding:
+  icon: 'git-branch'
+  color: 'blue'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
